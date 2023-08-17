@@ -1,0 +1,66 @@
+.button {
+  cursor: pointer;
+  font: inherit;
+  background: var(--color-bg);
+  color: white;
+  padding: 0.75rem 2rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 15px;
+  font-weight: bold;
+}
+
+.button:hover,
+.button:active {
+  background-color: rgb(49, 131, 124);
+  border: 1px solid var(--color-bg);
+}
+
+.icon {
+  width: 1.35rem;
+  height: 1.35rem;
+  margin-right: 0.5rem;
+}
+
+.badge {
+  /* background-color: var(--color-bg-variant);
+  padding: 0.1rem 0.1rem;
+  border-radius: 50px; */
+  margin-left: 1rem;
+  font-weight: bold;
+  color: black;
+  font-size: 12px;
+}
+
+.title h4 {
+  font-size: 12px;
+  font-weight: 300;
+}
+
+/* .button:hover .badge,
+.button:active .badge {
+  color: black;
+} */
+
+.bump {
+  animation: bump 300ms ease-out;
+}
+
+@keyframes bump {
+  0% {
+    transform: scale(1);
+  }
+  10% {
+    transform: scale(0.9);
+  }
+  30% {
+    transform: scale(1.1);
+  }
+  50% {
+    transform: scale(1.15);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
